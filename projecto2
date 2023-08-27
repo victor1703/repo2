@@ -1,0 +1,300 @@
+
+<script>
+let headlineElement2 = document.querySelector('.headline.el-20967 .headline-inner h3');
+
+if (headlineElement2) {
+    headlineElement2.textContent = "AudioTech Innovations"; // Nombre de compañía inventada
+}
+
+let productElement = document.querySelector('.headline.el-412380 .headline-inner h3 strong');
+
+if (productElement) {
+    productElement.textContent = "Auricular Inalambrico";
+}
+
+
+let descriptionElement = document.querySelector('.paragraph.el-496061 .paragraph-inner p');
+
+if (descriptionElement) {
+    descriptionElement.innerHTML = "Auriculares inalámbricos de alta fidelidad, diseñados para una experiencia auditiva inigualable. Conectividad rápida, batería de larga duración y comodidad superior.";
+}
+
+
+let btnElement = document.querySelector('.btn-headline');
+if (btnElement) {
+    btnElement.textContent = "ORDENE YA, PAGUE AL RECIBIR";
+}
+
+document.querySelector('.paragraph.el-57519').textContent = 'OFERTA DE TIEMPO LIMITADO!';
+document.querySelector('.paragraph.el-366816').textContent = '¡Aprovecha esta oferta exclusiva antes de que termine!';
+
+let timerElement = document.querySelector('.timer-id-782732');
+if (timerElement) {
+    let hoursLabel = timerElement.querySelector('[data-hours] + .timer_label');
+    if (hoursLabel) {
+        hoursLabel.textContent = "Horas";
+    }
+
+    let minutesLabel = timerElement.querySelector('[data-minutes] + .timer_label');
+    if (minutesLabel) {
+        minutesLabel.textContent = "Minutos";
+    }
+
+    let secondsLabel = timerElement.querySelector('[data-seconds] + .timer_label');
+    if (secondsLabel) {
+        secondsLabel.textContent = "Segundos";
+    }
+}
+
+
+let shippingElement = document.querySelector('.paragraph.el-88525 .paragraph-inner span');
+
+if (shippingElement) {
+    shippingElement.textContent = "ENVÍO Y DEVOLUCIONES GRATIS EN TODOS LOS PEDIDOS";
+}
+
+let headlineElement1 = document.querySelector('.headline.el-93278 .headline-inner strong');
+
+if (headlineElement1) {
+    headlineElement1.textContent = "¡AUDIO INIGUALABLE!";
+}
+
+let paragraphElement = document.querySelector('.paragraph.el-78831 .paragraph-inner span');
+
+if (paragraphElement) {
+    paragraphElement.textContent = "Experimenta una calidad de sonido sin precedentes, sumergiéndote en cada nota y detalle con nitidez. Nuestra tecnología avanzada asegura que cada canción, podcast o llamada se escuche con la claridad que mereces. ¡Prepárate para una experiencia auditiva inigualable!";
+}
+
+
+function updateText(selector, newText) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.textContent = newText;
+    }
+}
+
+const featureData = [
+    { selector: '.headline.el-67459 h3 strong', text: "Diseño Ergonómico" },
+    { selector: '.paragraph.el-52123 p', text: "Un diseño adaptado a la forma de tu oreja, proporcionando comodidad durante todo el día." },
+    
+    { selector: '.headline.el-76372 h3 strong', text: "Batería de Larga Duración" },
+    { selector: '.paragraph.el-88060 p', text: "Disfruta de hasta 24 horas de música sin interrupciones con una sola carga." },
+    
+    { selector: '.headline.el-5119 h3 strong', text: "Conexión Estable" },
+    { selector: '.paragraph.el-43140 p', text: "Con tecnología Bluetooth 5.0, garantiza una conexión sin pérdidas en cualquier situación." },
+    
+    { selector: '.headline.el-3088 h3 strong', text: "Calidad de Sonido Superior" },
+    { selector: '.paragraph.el-18982 p', text: "Sonido nítido y bajos profundos que te sumergen en una experiencia auditiva inigualable." },
+    
+    { selector: '.headline.el-78508 h3 strong', text: "Resistencia al Agua" },
+    { selector: '.paragraph.el-38613 p', text: "Protección contra el agua y el sudor, ideales para entrenamientos y días lluviosos." },
+    
+    { selector: '.headline.el-29967 h3 strong', text: "Control Táctil Intuitivo" },
+    { selector: '.paragraph.el-42778 p', text: "Controles táctiles en el auricular para gestionar llamadas, volumen y reproducción de música." }
+];
+
+featureData.forEach(data => updateText(data.selector, data.text));
+
+// Cambia el título de la característica
+const featureTitle7 = document.querySelector('.headline.el-88544 h3 strong');
+if (featureTitle7) {
+    featureTitle7.textContent = "Reducción de Ruido Activa";
+}
+
+// Cambia la descripción de la característica
+const featureText7 = document.querySelector('.paragraph.el-48255 p');
+if (featureText7) {
+    featureText7.textContent = "La tecnología de reducción de ruido activa identifica y cancela el ruido exterior, permitiéndote disfrutar de una experiencia auditiva pura y sin interrupciones. Ya sea en la oficina, en un avión o en el tren, tu música será la única protagonista.";
+}
+
+// Cambia el título de la característica
+const featureTitle8 = document.querySelector('.headline.el-425893 h3 strong');
+if (featureTitle8) {
+    featureTitle8.textContent = "Conectividad Bluetooth 5.0";
+}
+
+// Cambia la descripción de la característica
+const featureText8 = document.querySelector('.paragraph.el-51173 p');
+if (featureText8) {
+    featureText8.textContent = "Con la última tecnología Bluetooth 5.0, estos auriculares ofrecen una conexión más rápida y estable. La transmisión de alta calidad garantiza que la música y las llamadas se reproduzcan de manera nítida, incluso en entornos con muchas interferencias.";
+}
+
+// Cambia el título de la característica
+const featureTitle9 = document.querySelector('.headline.el-480668 h3 strong');
+if (featureTitle9) {
+    featureTitle9.textContent = "Duración de la Batería Extendida";
+}
+
+// Cambia la descripción de la característica
+const featureText9 = document.querySelector('.paragraph.el-756583 p');
+if (featureText9) {
+    featureText9.textContent = "Gracias a la tecnología avanzada de baterías y al diseño eficiente, estos auriculares inalámbricos ofrecen hasta 24 horas de reproducción continua. Ya sea que estés viajando, trabajando o haciendo ejercicio, estos auriculares te acompañarán durante todo el día sin necesidad de una recarga.";
+}
+
+// Cambia el título de la característica
+const featureTitle10 = document.querySelector('.headline.el-118418 h3 strong');
+if (featureTitle10) {
+    featureTitle10.textContent = "Conexión Estable y Rápida";
+}
+
+// Cambia la descripción de la característica
+const featureText10 = document.querySelector('.paragraph.el-72874 p');
+if (featureText10) {
+    featureText10.textContent = "Nuestros auriculares utilizan la última tecnología Bluetooth 5.2 para garantizar una conexión ininterrumpida y rápida con tus dispositivos. Ya sea que estés en una llamada importante o escuchando tu lista de reproducción favorita, puedes confiar en una transmisión de audio sin retrasos ni interrupciones.";
+}
+
+// Cambia el título de la característica
+const featureTitle11 = document.querySelector('.headline.el-22561 h3 strong');
+if (featureTitle11) {
+    featureTitle11.textContent = "Diseño Ergonómico";
+}
+
+// Cambia la descripción de la característica
+const featureText11 = document.querySelector('.paragraph.el-579729 p span');
+if (featureText11) {
+    featureText11.textContent = "El diseño ergonómico de nuestros auriculares asegura un ajuste cómodo y seguro. Especialmente diseñados para largas horas de uso, podrás disfrutar de tu música o tus llamadas sin sentir molestias.";
+}
+
+
+// Cambiar el título "FEATURES BOX" por "Características de Auricular Inalámbrico"
+const generalTitle = document.querySelector('.headline.el-38789 h3 span');
+if (generalTitle) {
+    generalTitle.textContent = "Características de Auricular Inalámbrico";
+}
+
+// Cambiar "FEATURE 1" por "DISEÑO ERGONÓMICO"
+const feature1Title = document.querySelector('.headline.el-9891 h3 strong');
+if (feature1Title) {
+    feature1Title.textContent = "DISEÑO ERGONÓMICO";
+}
+
+// Cambiar la descripción de la característica 1
+const feature1Desc = document.querySelector('.paragraph.el-25661 p span');
+if (feature1Desc) {
+    feature1Desc.textContent = "Diseñado para adaptarse perfectamente a la oreja, proporcionando máximo confort durante largas horas de uso.";
+}
+
+// Cambiar "FEATURE 2" por "CALIDAD DE SONIDO SUPERIOR"
+const feature2Title = document.querySelector('.headline.el-64679 h3 strong');
+if (feature2Title) {
+    feature2Title.textContent = "CALIDAD DE SONIDO SUPERIOR";
+}
+
+// Cambiar la descripción de la característica 2
+const feature2Desc = document.querySelector('.paragraph.el-34511 p span');
+if (feature2Desc) {
+    feature2Desc.textContent = "Ofrece una experiencia sonora inigualable, con graves profundos y agudos claros, ideal para música, llamadas y más.";
+}
+
+// Cambiar "FEATURE 3" por "BATERÍA DE LARGA DURACIÓN"
+const feature3Title = document.querySelector('.headline.el-35894 h3 strong');
+if (feature3Title) {
+    feature3Title.textContent = "BATERÍA DE LARGA DURACIÓN";
+}
+
+// Cambiar la descripción de la característica 3
+const feature3Desc = document.querySelector('.paragraph.el-47297 p span');
+if (feature3Desc) {
+    feature3Desc.textContent = "Permite una reproducción continua de música durante horas sin necesidad de recargar, garantizando que tu música te acompañe todo el día.";
+}
+
+
+// Cambiar "TESTIMONIALS" por "TESTIMONIOS"
+const testimonialTitle = document.querySelector('.headline.el-496222 h3 strong');
+if (testimonialTitle) {
+    testimonialTitle.textContent = "TESTIMONIOS";
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    function updateName(selector, newName) {
+        let nameElement = document.querySelector(selector);
+        if(nameElement) {
+            nameElement.textContent = newName;
+        }
+    }
+
+    function updateReview(selector, reviewHTML) {
+        let reviewElement = document.querySelector(selector);
+        if(reviewElement) {
+            reviewElement.innerHTML = reviewHTML;
+        }
+    }
+
+    // Cambios para "JOHN PAUL"
+    updateName('.el-563036 .headline-inner h3 strong', "Lucía Fernández");
+    updateReview('.el-618415 .paragraph-inner', `
+        <p><strong>Valoración:</strong>&nbsp;⭐️⭐️⭐️⭐️⭐️</p>
+        <p><em>"Desde que utilicé este producto, mi vida cambió para mejor. Es realmente sorprendente y lo recomendaría a cualquiera."</em></p>
+    `);
+
+    // Cambios para "STEVE McDONALD"
+    updateName('.el-113953 .headline-inner h3', "ESTEBAN MENDEZ");
+    updateReview('.el-295691 .paragraph-inner', `
+        <p><strong>Valoración:</strong>&nbsp;⭐️⭐️⭐️⭐️⭐️</p>
+        <p><em>"Este producto es fantástico. Desde que comencé a usarlo, he notado grandes mejoras. ¡Totalmente recomendado!"</em></p>
+    `);
+
+    // Cambios para "CHRIS JAMES"
+    updateName('.el-228801 .headline-inner h3', "CRISTIAN JIMÉNEZ");
+    updateReview('.el-161293 .paragraph-inner', `
+        <p><strong>Valoración:</strong>&nbsp;⭐️⭐️⭐️⭐️⭐️</p>
+        <p><em>"Nunca había probado algo así antes. Ha superado mis expectativas y ahora es una parte esencial de mi rutina diaria."</em></p>
+    `);
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let faqElement = document.querySelector('.el-166895 .headline-inner h3');
+    if(faqElement) {
+        faqElement.textContent = "PREGUNTAS FRECUENTES";
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const updateContent = (elementClasses, contentList, isQuestion = true) => {
+        for (let i = 0; i < elementClasses.length; i++) {
+            let targetElement = document.querySelector(`${elementClasses[i]} .paragraph-inner p:nth-child(1)`);
+
+            if (isQuestion) {
+                let secondElement = document.querySelector(`${elementClasses[i]} .paragraph-inner p:nth-child(2)`);
+                secondElement.remove();
+            }
+
+            targetElement.textContent = contentList[i];
+        }
+    }
+
+    // Lista de clases de los elementos a modificar para las preguntas
+    const questionElementClasses = ['.el-78732', '.el-67252', '.el-35187', '.el-75018', '.el-44794', '.el-85034'];
+    const newQuestions = [
+        "¿Cómo puedo contactar al servicio al cliente?",
+        "¿Dónde puedo encontrar más información sobre el producto?",
+        "¿Cuál es el tiempo de envío estimado para los pedidos?",
+        "¿Tienen una política de devoluciones?",
+        "¿Puedo modificar mi pedido después de haberlo realizado?",
+        "¿Ofrecen descuentos para compras en grandes cantidades?"
+    ];
+
+    // Actualizar preguntas
+    updateContent(questionElementClasses, newQuestions);
+
+    // Lista de clases de los elementos a modificar para las respuestas
+    const answerElementClasses = ['.el-3356', '.el-63217', '.el-84140', '.el-86134', '.el-7310', '.el-88840'];
+    const answers = [
+        "Puedes contactar al servicio al cliente a través de nuestra sección de Contacto o llamando al número que aparece en la parte inferior del sitio.",
+        "Aquí puedes encontrar toda la información sobre el producto en la sección de especificaciones y detalles.",
+        "El tiempo de envío estimado para los pedidos es de 3 a 5 días laborables.",
+        "Sí, ofrecemos una política de devoluciones de 30 días a partir de la fecha de compra.",
+        "Puedes modificar tu pedido en las primeras 24 horas después de haberlo realizado. Después de ese tiempo, no se garantizan cambios.",
+        "Ofrecemos descuentos para compras en grandes cantidades. Para obtener más detalles, contacta con nuestro equipo de ventas."
+    ];
+
+    // Actualizar respuestas
+    updateContent(answerElementClasses, answers, false);
+});
+
+
+</script>
